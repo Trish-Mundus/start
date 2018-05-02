@@ -1,0 +1,1 @@
+ALTER TABLE `realty_new` ADD COLUMN `type2` VARCHAR(50) NOT NULL
