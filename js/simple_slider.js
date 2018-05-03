@@ -1,13 +1,13 @@
 <div class="container">
       <div  class="slider">
-         <div class="item"><img src="image.jpg"></div>
-         <div class="item"><img src="image.jpg"></div>
-         <div class="item"><img src="image.jpg"></div>
-         <div class="item"><img src="image.jpg"></div>
-         <div class="item"><img src="image.jpg"></div>
-      </div>
+         <div class="item"><img src="https://avatars.mds.yandex.net/get-direct/42386/1ff8xviz0f1jZSbuX3rsrA/y150"></div>
+         <div class="item"><img src="https://avatars.mds.yandex.net/get-direct/42386/1ff8xviz0f1jZSbuX3rsrA/y150"></div>
+         <div class="item"><img src="https://avatars.mds.yandex.net/get-direct/42386/1ff8xviz0f1jZSbuX3rsrA/y150"></div>
+         <div class="item"><img src="https://avatars.mds.yandex.net/get-direct/42386/1ff8xviz0f1jZSbuX3rsrA/y150"></div>
+         <div class="item"><img src="https://avatars.mds.yandex.net/get-direct/42386/1ff8xviz0f1jZSbuX3rsrA/y150"></div>
       <button class="prev" id="button" onclick="Right2()"><<</button>
-      <button class="next" id="button" onclick="Left2()">>></button></div>
+      <button class="next" id="button" onclick="Left2()">>></button>
+      </div>
 </div>
 
 <style type="text/css">
@@ -38,11 +38,14 @@
 <script type="javascript">
 $(document).ready(function(){
 var wid = $('.item').width()*$('.item').length;
-$('.container').css('width',$('.item').width()*$('.item').length+'px').css('height',$('.item').height()+'px');
+$('.container').css('width',wid+'px').css('height',$('.item').height()+'px');
 function Left2() {
-
+if($('.item').position().left >= -wid2){
+      $('.item').animate({"left": '-='+$('.item').width()+'px'});
+                                       }else{$('.item').animate({"left": '0px'});}
 }
 function Right2() {
 
 }
+});
 </script>
