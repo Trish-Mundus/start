@@ -1,2 +1,2 @@
-Program code for help
-part of plugins,modules, components, controllers, ect.
+Program code for help.
+Part of plugins,modules, components, controllers, ect.
