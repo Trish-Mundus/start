@@ -1,1 +1,1 @@
-Category menu, subcategories inside parent category <li>
+Category menu, subcategories inside parent category li
