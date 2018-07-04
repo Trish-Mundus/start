@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SVG Painting</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+<style>
+.svg {color:#054dcc;}
+svg{float:left;position:relative}svg > span{position:absolute;top:0;right:0}
+text{font-family:ALS Direct SemiC;color:#9ae1ff;font-size:14px;text-transform:uppercase;text-align:center;background:rgba(5,63,175,0.08);line-height:18px;transition:opacity 1s ease-in-out 1s;opacity:0;fill:#9ae1ff}
+svg > a{background:rgba(5,63,175,0.08)}
+#pol4{fill:rgba(134,145,167,0.3);transition:opacity 1s ease-in-out .5s;opacity:0}
+path,line,polyline{stroke:#053faf;stroke-width:2px}text{font-family:ALS Direct SemiC;color:#9ae1ff;font-size:14px;text-transform:uppercase;text-align:center;background:rgba(5,63,175,0.08);line-height:18px;transition:opacity 1s ease-in-out 1s;opacity:0;fill:#9ae1ff}svg > a{background:rgba(5,63,175,0.08)}
+path{fill:transparent}polyline{stroke-width:4px}#ps4 path{stroke-width:5px}
+</style>
+</head>
+<body>
+
+<div class="svg">
+<svg xmlns="//www.w3.org/2000/svg" height="460" width="100%" viewBox="0 0 1000 460">
+  <path id="path1" d="M -80 20 L -80 200 L -60 200 L -60 125 L 10 200 L 35 200 L -60 95 L 10 30 L 35 30 L 35 20 L -5 20 L -60 70 L -60 20 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 1s ease-in-out; stroke-dashoffset: 988.00;"></path>
+  <path id="path2" d="M 60 20 L 190 20 L 190 40 L 135 40 L 135 180 L 190 180 L 190 200 L 60 200 L 60 180 L 115 180 L 115 40 L 60 40 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path3" d="M 210 20 L 230 20 L 230 180 L 310 180 L 310 170 L 330 170 L 330 200 L 210 200 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path4" d="M 350 20 L 370 20 L 370 180 L 450 180 L 450 170 L 470 170 L 470 200 L 350 200 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path5" d="M 540 200 L 610 20 L 630 20 L 700 200 L 680 200 L 660 150 L 580 150 L 560 200 Z M 585 130 L 615 50 L 625 50 L 655 130 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path6" d="M 720 20 L 740 20 L 740 180 L 820 180 L 820 170 L 840 170 L 840 200 L 720 200 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path7" d="M 860 20 L 880 20 L 880 180 L 960 180 L 960 170 L 980 170 L 980 200 L 860 200 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path8" d="M -40 240 L -40 420 L -20 420 L -20 340 L 60 340 L 60 420 L 80 420 L 80 240 L 60 240 L 60 320 L -20 320 L -20 240 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path9" d="M 100 240 L 100 380 L 120 420 L 220 420 L 220 240 L 200 240 L 200 400 L 130 400 L 120 380 L 120 240 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path10" d="M 240 240 V 420 H 260 V 290 L 320 380 H 340 L 400 290 V 420 H 420" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path11" d="M 420 420 V 240 H 410 L 340 350 H 320 L 250 240 H 240" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path12" d="M 440 420 L 510 240 L 530 240 L 600 420 L 580 420 L 560 370 L 480 370 L 460 420 Z M 485 350 L 515 270 L 525 270 L 555 350 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path13" d="M 640 240 L 620 240 V 420 H 640 V 290 L 720 420 H 740 V 240 H 720 V 360 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  <path id="path14" d="M 880 260 L 860 240 H 780 L 760 260 V 310 L 780 330 H 840 L 860 350 V 380 L 840 400 H 780 V 380 H 760 V 400 L 780 420 H 850 L 880 390 V 340 L 850 310 H 790 L 780 300 V 270 L 790 260 H 860 V 280 H 880 Z" stroke-width="10" fill="#ffffff" stroke-dasharray="988.00 988.00" style="transition: stroke-dashoffset 2s ease-in-out .5s; stroke-dashoffset: 988.00;"/></path>
+  </svg>
+</div>
+<script type="text/javascript">
+ $(document).ready(function() {
+  var radio = true; 
+  function show(){
+  path1.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path2.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path3.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path4.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path5.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path6.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path7.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path8.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path9.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path10.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path11.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path12.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path13.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  path14.style.strokeDashoffset = (radio) ? '0' : '988.00';
+  radio = !radio;
+  }
+  setTimeout(show, 100);
+  setInterval(function() {
+  setTimeout(show, 400);
+  },3000);
+});
+</script>
+</body>
+</html>
